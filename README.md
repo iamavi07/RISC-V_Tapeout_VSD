@@ -1,14 +1,27 @@
-# RISC-V_Tapeout_VSD
+### 🏗 Digital VLSI SoC Design and Planning
 
-## Tools Installation
+Digital VLSI System-on-Chip (SoC) design is the process of integrating millions to billions of transistors on a single chip to build complex digital systems such as processors, controllers, and accelerators. The design flow begins with specification and RTL coding, followed by functional verification, logic synthesis, and design-for-testability (DFT). After that, the design moves into the physical design phase, which includes floorplanning, placement, clock tree synthesis, routing, and finally sign-off checks like timing closure and power analysis.
 
-#### <ins>All the instructions for installation of required tools can be found here:</ins>
+SoC planning also involves partitioning the design into modules, defining the interconnect architecture, and optimizing performance, power, and area (PPA). With the rise of open-source tools and RISC-V architecture, learning SoC design provides engineers with both practical skills and industry-relevant exposure to modern chip development flows.## RISC-V_Tapeout_VSD
+## Tool Installation Guide
 
-### **System Requirements**
-- 6 GB RAM
-- 50 GB HDD
-- Ubuntu 20.04 or higher
-- 4 vCPU
+This repository documents the essential setup required to run RISC-V open-source toolchains for tapeout projects. Follow the steps carefully to prepare your system environment.
+
+### 🔧 System Requirements
+
+Before starting, make sure your machine meets the following requirements:
+
+RAM: Minimum 6 GB
+
+Disk Space: At least 50 GB free
+
+Operating System: Ubuntu 20.04 (or newer)
+
+Processor: 4 vCPUs recommended
+
+🖥 Adjusting Ubuntu Window Size
+
+If you are running Ubuntu inside VirtualBox and the display does not fit the screen, install the required headers and VirtualBox Guest Additions:
 
 ### **Resizing the Ubuntu window to fit the screen**
 ```bash
@@ -18,9 +31,10 @@ $ cd /media/spatha/VBox_GAs_7.1.8/
 $ ./autorun.sh
 ```
 
-### **TOOL CHECK**
+## ✅ Tool Installation & Verification
+### 1. Yosys (Synthesis Tool)
 
-#### <ins>**Yosys**</ins>
+Yosys is the open-source framework for RTL synthesis. To build and install it:
 ```bash
 $ sudo apt-get update
 $ git clone https://github.com/YosysHQ/yosys.git
@@ -39,7 +53,9 @@ $ sudo make install
 <img width="1032" height="610" alt="image" src="https://github.com/user-attachments/assets/8d3eb8e2-c3fe-4c9b-b9f1-7eff0d0a8a69" />
 
 
-#### <ins>**Iverilog**</ins>
+#### 2. Icarus Verilog (iverilog)
+
+For simulation of Verilog designs, install Icarus Verilog:
 ```bash
 $ sudo apt-get update
 $ sudo apt-get install iverilog
@@ -47,7 +63,9 @@ $ sudo apt-get install iverilog
 <img width="1192" height="456" alt="Screenshot 2025-09-20 120824" src="https://github.com/user-attachments/assets/7f5de4bd-cbd6-4958-a9ed-b1532ceadb47" />
 
 
-#### <ins>**gtkwave**</ins>
+#### 3. GTKWave
+
+GTKWave is a waveform viewer used to debug simulation outputs. Install it as:
 ```bash
 $ sudo apt-get update
 $ sudo apt install gtkwave
