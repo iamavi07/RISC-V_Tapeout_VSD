@@ -1,7 +1,5 @@
 # RISC-V_Tapeout_VSD
 
-# RISC-V Reference SoC Tapeout Program VSD
-
 ## Tools Installation
 
 #### <ins>All the instructions for installation of required tools can be found here:</ins>
@@ -45,7 +43,8 @@ $ sudo make install
 $ sudo apt-get update
 $ sudo apt-get install iverilog
 ```
-![Alt Text](Images/iverilog_status.png)
+![Alt Text]<img width="1192" height="456" alt="Screenshot 2025-09-20 120824" src="https://github.com/user-attachments/assets/7f5de4bd-cbd6-4958-a9ed-b1532ceadb47" />
+
 
 #### <ins>**gtkwave**</ins>
 ```bash
