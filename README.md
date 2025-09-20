@@ -36,14 +36,15 @@ $ git submodule update --init --recursive
 $ make 
 $ sudo make install
 ```
-![Alt Text](Images/yosys_installation_done.jpeg)
+<img width="1032" height="610" alt="image" src="https://github.com/user-attachments/assets/8d3eb8e2-c3fe-4c9b-b9f1-7eff0d0a8a69" />
+
 
 #### <ins>**Iverilog**</ins>
 ```bash
 $ sudo apt-get update
 $ sudo apt-get install iverilog
 ```
-!<img width="1192" height="456" alt="Screenshot 2025-09-20 120824" src="https://github.com/user-attachments/assets/7f5de4bd-cbd6-4958-a9ed-b1532ceadb47" />
+<img width="1192" height="456" alt="Screenshot 2025-09-20 120824" src="https://github.com/user-attachments/assets/7f5de4bd-cbd6-4958-a9ed-b1532ceadb47" />
 
 
 #### <ins>**gtkwave**</ins>
